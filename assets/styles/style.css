@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #192a32;
+  margin-top: 20%;
+}
+
+.game-bg {
+  width: 50%;
+}
+
+/* .game-bg .container {
+  width: 90%;
+  display: flex;
+  flex-direction: c;
+} */
+
+.game-bg .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.6rem;
+}
+
+.game-bg .top .icons i {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.game-bg .top .icons i:first-child {
+  color: #31c4bE;
+}
+
+.game-bg .top .icons i:last-child {
+  color: orange;
+}
+
+.game-bg .top .turn-btn {
+  border-radius: 4px;
+  border: none;
+  background-color: #1F3540;
+  padding: 4px 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.game-bg .top .turn-btn span {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.game-bg .top .turn-btn i {
+  font-size: 1.2rem;
+  margin-right: 4px;
+  color: #fff;
+}
+
+.game-bg .top .restart-btn {
+  border-radius: 4px;
+  border: none;
+  background-color: #A8BEC9;
+  padding: 8px 8px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.game-bg .game-area {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 1rem;
+}
+
+.game-bg .game-area .game-area-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.game-bg .game-area .game-area-row .box {
+  width: 88px;
+  height: 88px;
+  border-radius: 4px;
+  background-color: #1F3540;
+}
+
+.game-bg .game-area .game-area-row .box .cross-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.game-bg .game-area .game-area-row .box .cross-icon i {
+  font-size: 32px;
+  color: aqua;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+
+.game-bg .game-area .game-area-row .box:hover .cross-icon i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.game-bg .bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.game-bg .bottom .rating-box {
+  margin-top: 1rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 24px;
+}
+
+.game-bg .bottom .rating-box span {
+  font-size: 1rem;
+  font-weight: 800;
+  color: black;
+}
+
+.game-bg .bottom .rating-box:nth-child(1) {
+  background-color: #31c4bE;
+}
+
+.game-bg .bottom .rating-box:nth-child(2) {
+    background-color: #A8BEC9;
+}
+
+.game-bg .bottom .rating-box:nth-child(3) {
+  background-color: yellow;
+}
